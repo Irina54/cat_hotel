@@ -1,0 +1,16 @@
+<div class="footer__menu menu">
+	<nav class="footer__menu-body menu__body">
+		<ul class="footer__menu-list menu__list">
+			<li><a href="#" class="menu__link">Почему мы?</a>
+			</li>
+			<li><a href="#" class="menu__link">Номера</a>
+			</li>
+			<li><a href="#" class="menu__link">Отзывы</a>
+			</li>
+			<li><a href="#" class="menu__link">Как нас найти</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+data-goto=".numbers-slider"
+truetype
