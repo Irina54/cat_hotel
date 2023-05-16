@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Rubik:wght@400;500;700&display=swap"
+		rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" /> -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<title>Каталог</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__container">
+				<a href="/" class="header__logo">
+					<picture>
+						<source srcset="img/logo-mob.png" media="(max-width: 498px)">
+						<img src="img/logo.png" alt="logo">
+					</picture>
+				</a>
+				<div class="menu__burger">
+					<span></span>
+				</div>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li><a data-goto=".advantages" href="#" class="menu__link">Почему мы?</a>
+							</li>
+							<li><a data-goto=".numbers-slider" href="#" class="menu__link">Номера</a>
+							</li>
+							<li><a data-goto=".reviews" href="#" class="menu__link">Отзывы</a>
+							</li>
+							<li><a data-goto=".contacts" href="#" class="menu__link">Как нас найти</a>
+							</li>
+							<li><a href="tel:88003335599" class="menu__link menu__link-mobinfo">8 (800) 333-55-99</a>
+							</li>
+							<li class="menu__link-mobinfo"><a href="#" class="contacts__info-list_social">
+									<img src="img/facebook.png" alt="facebook">
+								</a>
+								<a href="#" class="contacts__info-list_social">
+									<img src="img/instagram.png" alt="instagram">
+								</a>
+								<a href="#" class="contacts__info-list_social">
+									<img src="img/vk.png" alt="vk">
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<main class="page">
+			<section class="catalog">
+				<div class="wrapper">
+					<div class="catalog__container">
+						<h1 class="catalog__title">Наши номера</h1>
+						<div class="catalog__body">
+							<div class="catalog__filter">
+								<div class="catalog__filter-price price-filter">
+									<div class="catalog__filter-title price-filter__title">Цена за сутки, ₽</div>
+									<div class="price-filter__inputs">
+										<input type="text" name="price-start" data-filter-price="start"
+											class="price-filter__input" placeholder="от 100" value="">
+										<input type="text" name="price-end" data-filter-price="end"
+											class="price-filter__input" placeholder="до 600" value="">
+									</div>
+								</div>
+								<div class="catalog__filter-area area-filter">
+									<div class="catalog__filter-title">Площадь</div>
+									<fieldset class="area-filter__checkbox checkbox">
+										<label for="c_1" class="area-filter__checkbox-label checkbox__label">
+											<input class="area-filter__checkbox-input checkbox__input" type="checkbox"
+												name="" id="c_1">
+											<span class="area-filter__checkbox-style checkbox__style"></span>
+											0,63 м2</label>
+										<label for="c_2" class="area-filter__checkbox-label checkbox__label">
+											<input class="area-filter__checkbox-input checkbox__input" type="checkbox"
+												name="" id="c_2">
+											<span class="area-filter__checkbox-style checkbox__style"></span>
+											0,90 м2</label>
+										<label for="c_3" class="area-filter__checkbox-label checkbox__label">
+											<input class="area-filter__checkbox-input checkbox__input" type="checkbox"
+												name="" id="c_3">
+											<span class="area-filter__checkbox-style checkbox__style"></span>
+											1,13 м2</label>
+										<label for="c_4" class="area-filter__checkbox-label checkbox__label">
+											<input class="area-filter__checkbox-input checkbox__input" type="checkbox"
+												name="" id="c_4">
+											<span class="area-filter__checkbox-style checkbox__style"></span>
+											1,56 м2</label>
+										<label for="c_5" class="area-filter__checkbox-label checkbox__label">
+											<input class="area-filter__checkbox-input checkbox__input" type="checkbox"
+												name="" id="c_5">
+											<span class="area-filter__checkbox-style checkbox__style"></span>
+											2,56 м2</label>
+										<label for="c_6" class="area-filter__checkbox-label checkbox__label">
+											<input class="area-filter__checkbox-input checkbox__input" type="checkbox"
+												name="" id="c_6">
+											<span class="area-filter__checkbox-style checkbox__style"></span>
+											2,88 м2</label>
+									</fieldset>
+								</div>
+								<div class="catalog__filter-equipment equipment-filter">
+									<div class="catalog__filter-title">Оснащение номера</div>
+									<fieldset class="equipment__filter-checkbox checkbox">
+										<label for="c_7" class="-filter__checkbox-label checkbox__label">
+											<input class="equipment-filter__checkbox-input checkbox__input"
+												type="checkbox" name="" id="c_7">
+											<span class="equipment-filter__checkbox-style checkbox__style"></span>
+											Пустой номер</label>
+										<label for="c_8" class="-filter__checkbox-label checkbox__label">
+											<input class="equipment-filter__checkbox-input checkbox__input"
+												type="checkbox" name="" id="c_8">
+											<span class="equipment-filter__checkbox-style checkbox__style"></span>
+											Лежак</label>
+										<label for="c_9" class="-filter__checkbox-label checkbox__label">
+											<input class="equipment-filter__checkbox-input checkbox__input"
+												type="checkbox" name="" id="c_9">
+											<span class="equipment-filter__checkbox-style checkbox__style"></span>
+											Когтеточка</label>
+										<label for="c_10" class="-filter__checkbox-label checkbox__label">
+											<input class="equipment-filter__checkbox-input checkbox__input"
+												type="checkbox" name="" id="c_10">
+											<span class="equipment-filter__checkbox-style checkbox__style"></span>
+											Игровой-комплекс</label>
+										<label for="c_11" class="-filter__checkbox-label checkbox__label">
+											<input class="equipment-filter__checkbox-input checkbox__input"
+												type="checkbox" name="" id="c_11">
+											<span class="equipment-filter__checkbox-style checkbox__style"></span>
+											Домик</label>
+									</fieldset>
+								</div>
+								<button class="catalog__filter-btn catalog__filter-btn_apply">Применить</button>
+								<button class="catalog__filter-btn catalog__filter-btn_reset">Сбросить фильтр</button>
+							</div>
+							<div class="catalog__content">
+								<div class="catalog__control">
+									<!-- <select name="control" id="control" class="catalog__control-body">
+										<option value="area" selected
+											class="catolog__control-list catolog__control-list_larger" selected>По
+											площади</option>
+										<option value="area" class="catolog__control-list catolog__control-list_smaller"
+											selected>По площади</option>
+										<option value="price-up" class="catolog__control-list">По цене</option>
+										<option value="price-down" class="catolog__control-list">По цене</option>
+									</select> -->
+									<div class="catalog__control-header">
+										<span class="catalog__control-current">&uarr; По площади</span>
+										<div class="catalog__control-icon">
+											<svg viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L7.70711 7.70711C7.31658 8.09763 6.68342 8.09763 6.29289 7.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
+													fill="#1A212F" />
+											</svg>
+										</div>
+									</div>
+									<div class="catalog__control-body">
+										<div class="catalog__control-item">&uarr; По площади</div>
+										<div class="catalog__control-item">&darr; По площади</div>
+										<div class="catalog__control-item">&uarr; По цене</div>
+										<div class="catalog__control-item">&darr; По цене</div>
+									</div>
+								</div>
+								<div class="catalog__inner">
+									<div class="catalog__numbers">
+										<div class="catalog__numbers-number number-catalog">
+											<img src="img/economy.png" alt="Эконом" class="number-catalog__img">
+											<a class="number-catalog__title">Эконом</a>
+											<div class="number-catalog__list">
+												<dl class="number-catalog__dest">
+													<dt>Размеры (ШхГхВ) - </dt>
+													<dd><span class="number__size"> 90х70х180 см</span></dd>
+												</dl>
+												<dl class="number-catalog__dest">
+													<dt>Площадь - </dt>
+													<dd><span class="number__aria"> 0,63 м2</span></dd>
+												</dl>
+												<dl class="number-catalog__dest dest_equip">
+													<dt>Оснащение номера </dt>
+													<dd>
+														<span class="icon-empty number__empty equip"></span>
+													</dd>
+												</dl>
+												<dl class="number-catalog__dest">
+													<dt>Цена за сутки: </dt>
+													<dd><span class="number__price"> 100₽</span></dd>
+												</dl>
+												<a href="#" class="number-catalog__btn">Забронировать</a>
+											</div>
+										</div>
+									</div>
+									<div class="catalog__numbers">
+										<div class="catalog__numbers-number number-catalog">
+											<img src="img/economy+.png" alt="Эконом плюс" class="number-catalog__img">
+											<a class="number-catalog__title">Эконом плюс</a>
+											<div class="number-catalog__list">
+												<dl class="number-catalog__dest">
+													<dt>Размеры (ШхГхВ) - </dt>
+													<dd><span class="number__size"> 90х70х180 см</span></dd>
+												</dl>
+												<dl class="number-catalog__dest">
+													<dt>Площадь - </dt>
+													<dd><span class="number__aria"> 0,90 м2</span></dd>
+												</dl>
+												<dl class="number-catalog__dest dest_equip">
+													<dt>Оснащение номера </dt>
+													<dd>
+														<span class="icon-sunbed number__sunbed equip"></span>
+														<span class="icon-scratch-post number__post equip"></span>
+													</dd>
+												</dl>
+												<dl class="number-catalog__dest">
+													<dt>Цена за сутки: </dt>
+													<dd><span class="number__price"> 200₽</span></dd>
+												</dl>
+												<a href="#" class="number-catalog__btn">Забронировать</a>
+											</div>
+										</div>
+									</div>
+									<div class="catalog__numbers">
+										<div class="catalog__numbers-number number-catalog">
+											<img src="img/comfort.png" alt="Комфорт" class="number-catalog__img">
+											<a class="number-catalog__title">Комфорт</a>
+											<div class="number-catalog__list">
+												<dl class="number-catalog__dest">
+													<dt>Размеры (ШхГхВ) - </dt>
+													<dd><span class="number__size"> 100х125х180 см</span></dd>
+												</dl>
+												<dl class="number-catalog__dest">
+													<dt>Площадь - </dt>
+													<dd><span class="number__aria"> 1,13 м2</span></dd>
+												</dl>
+												<dl class="number-catalog__dest dest_equip">
+													<dt>Оснащение номера </dt>
+													<dd>
+														<span class="icon-sunbed number__sunbed equip"></span>
+														<span class="icon-scratch-post number__post equip"></span>
+														<span class="icon-gemes number__gemes equip"></span>
+													</dd>
+												</dl>
+												<dl class="number-catalog__dest">
+													<dt>Цена за сутки: </dt>
+													<dd><span class="number__price"> 250₽</span></dd>
+												</dl>
+												<a href="#" class="number-catalog__btn">Забронировать</a>
+											</div>
+										</div>
+									</div>
+									<div class="catalog__numbers">
+										<div class="catalog__numbers-number number-catalog">
+											<img src="img/suite.png" alt="Сьют" class="number-catalog__img">
+											<a class="number-catalog__title">Сьют</a>
+											<div class="number-catalog__list">
+												<dl class="number-catalog__dest">
+													<dt>Размеры (ШхГхВ) - </dt>
+													<dd><span class="number__size"> 125х125х180 см</span></dd>
+												</dl>
+												<dl class="number-catalog__dest">
+													<dt>Площадь - </dt>
+													<dd><span class="number__aria"> 1,56 м2</span></dd>
+												</dl>
+												<dl class="number-catalog__dest dest_equip">
+													<dt>Оснащение номера </dt>
+													<dd>
+														<span class="icon-sunbed number__sunbed equip"></span>
+														<span class="icon-scratch-post number__post equip"></span>
+														<span class="icon-gemes number__gemes equip"></span>
+													</dd>
+												</dl>
+												<dl class="number-catalog__dest">
+													<dt>Цена за сутки: </dt>
+													<dd><span class="number__price"> 350₽</span></dd>
+												</dl>
+												<a href="#" class="number-catalog__btn">Забронировать</a>
+											</div>
+										</div>
+									</div>
+									<div class="catalog__numbers">
+										<div class="catalog__numbers-number number-catalog">
+											<img src="img/lux.png" alt="Люкс" class="number-catalog__img">
+											<a class="number-catalog__title">Люкс</a>
+											<div class="number-catalog__list">
+												<dl class="number-catalog__dest">
+													<dt>Размеры (ШхГхВ) - </dt>
+													<dd><span class="number__size"> 160х160х180 см</span></dd>
+												</dl>
+												<dl class="number-catalog__dest">
+													<dt>Площадь - </dt>
+													<dd><span class="number__aria"> 2,56 м2</span></dd>
+												</dl>
+												<dl class="number-catalog__dest dest_equip">
+													<dt>Оснащение номера </dt>
+													<dd>
+														<span class="icon-sunbed number__sunbed equip"></span>
+														<span class="icon-scratch-post number__post equip"></span>
+														<span class="icon-gemes number__gemes equip"></span>
+														<span class="icon-home number__home equip"></span>
+													</dd>
+												</dl>
+												<dl class="number-catalog__dest">
+													<dt>Цена за сутки: </dt>
+													<dd><span class="number__price"> 500₽</span></dd>
+												</dl>
+												<a href="#" class="number-catalog__btn">Забронировать</a>
+											</div>
+										</div>
+									</div>
+									<div class="catalog__numbers">
+										<div class="catalog__numbers-number number-catalog">
+											<img src="img/super-lux.png" alt="Супер люкс" class="number-catalog__img">
+											<a class="number-catalog__title">Супер люкс</a>
+											<div class="number-catalog__list">
+												<dl class="number-catalog__dest">
+													<dt>Размеры (ШхГхВ) - </dt>
+													<dd><span class="number__size"> 180х160х180 см</span></dd>
+												</dl>
+												<dl class="number-catalog__dest">
+													<dt>Площадь - </dt>
+													<dd><span class="number__aria"> 2,88 м2</span></dd>
+												</dl>
+												<dl class="number-catalog__dest dest_equip">
+													<dt>Оснащение номера </dt>
+													<dd>
+														<span class="icon-sunbed number__sunbed equip"></span>
+														<span class="icon-scratch-post number__post equip"></span>
+														<span class="icon-gemes number__gemes equip"></span>
+														<span class="icon-home number__home equip"></span>
+													</dd>
+												</dl>
+												<dl class="number-catalog__dest">
+													<dt>Цена за сутки: </dt>
+													<dd><span class="number__price"> 600₽</span></dd>
+												</dl>
+												<a href="#" class="number-catalog__btn">Забронировать</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script src="js/catalog.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
